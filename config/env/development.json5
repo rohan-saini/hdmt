@@ -1,0 +1,12 @@
+{
+  app: {
+    name: "hdmt",
+    AWS_REGION: "us-east-1",
+    inputBucketName: "hdmt-simulation-sample-app",
+    userTableName: "hdmt-users"
+  },
+  logging: {
+    colorize: true,
+    timestamp: false
+  }
+}

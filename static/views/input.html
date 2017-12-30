@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="/bootstrap/css/theme/default/bootstrap.css">
+    <title>HDMT</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header" align="center">
+        <h3 class="text-muted" style="color: black;">Hedging Decision Management Tool</h3>
+      </div>
+
+      <div class="container col-sm-10" style="left: 10%; margin-bottom: 15px;">
+      <form id="simForm" class="form-horizontal" role="form">
+          <div class="row col-sm-12">
+              <div class="container col-sm-5" id="AVR">
+                  <label class="control-label col-sm-7" for="annualVolumeRequirement">Annual Volume Requirement</label>
+                  <div class="col-sm-5">
+                      <input type="number" class="form-control" id="annualVolumeRequirement" name="annualVolumeRequirement">
+                  </div>
+              </div>
+          </div>
+
+          <!-- first table -->
+          <div class="row col-sm-12">
+              <div class="container col-sm-5">
+                  <h4>Targeted Volume</h4>
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <td></td>
+                              <td style="color: white">filler</td>
+                              <td></td>
+                          </tr>
+                      </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row" class="col-sm-4"><strong>Max</strong></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" placeholder="%" name="max">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container" style="visibility: hidden;">
+                                <input type="number" class="form-control" placeholder="%" name="hidden">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-sm-4"><strong>Starting Month</strong></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="starting">
+                            </div>
+                        </td>
+                        <td><p>filler</p></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-sm-4"><strong>Over Months</strong></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="over">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="overPerMonth">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-sm-4"><strong>Ending Month</strong></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="ending">
+                            </div>
+                        </td>
+                        <td><p>filler</p></td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+
+
+              <!-- second table -->
+              <div class="container col-sm-7">
+                  <h4>Risk-Responsive Rules</h4>
+                  <table class="table">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>Per month</td>
+                            <td>Max</td>
+                            <td>From months</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row" class="col-sm-4"><strong>Programmatic</strong></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" placeholder="%" name="progPerMonth">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="progMax">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="progFromMonths">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-sm-4"><strong>Confidence</strong></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" placeholder="%" name="confidence">
+                            </div>
+                        </td>
+                        <td><p>filler</p></td>
+                        <td><p>filler</p></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-sm-4"><strong>Holding Period (days)</strong></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="holdingPeriod">
+                            </div>
+                        </td>
+                        <td><p>filler</p></td>
+                        <td><p>filler</p></td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+              </div>
+          </div>
+
+          <!-- third table -->
+          <div class="row col-sm-12">
+              <div class="container col-sm-6">
+                  <h4>Defensive Rules</h4>
+                  <table class="table">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>Boundary 1</td>
+                            <td>Boundary 2</td>
+                            <td>Boundary 3</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row" class="col-sm-3"><strong>Max Ratio, Yr 1</strong></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" placeholder="%" name="mRY1B1">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" placeholder="%" name="mRY1B2">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" placeholder="%" name="mRY1B3">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-sm-3"><strong>Max Ratio, Yr 2</strong></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" placeholder="%" name="mRY2B1">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" placeholder="%" name="mRY2B2">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" placeholder="%" name="mRY2B3">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-sm-3"><strong>Portfolio VaR Multiple, Yr 1</strong></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="pVMY1B1">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="pVMY1B2">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="pVMY1B3">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-sm-3"><strong>Portfolio VaR Multiple, Yr 2</strong></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="pVMY2B1">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="pVMY2B2">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="pVMY2B3">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-sm-3"><strong>Max Monthly Incr.</strong></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" placeholder="%" name="maxMonthlyInc">
+                            </div>
+                        </td>
+                        <td><p>filler</p></td>
+                        <td><p>filler</p></td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+              </div>
+
+              <!-- fourth table -->
+              <div class="container col-sm-6">
+                  <h4>Contingent</h4>
+                  <table class="table">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Holding Period</td>
+                            <td>Confidence</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row" class="col-sm-3"><strong>Monitor</strong></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="monitor">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="monitorHoldingPer">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" placeholder="%" name="monitorConfidence">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-sm-3"><strong>Suspended Hedges at MtM</strong></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" placeholder="%" name="suspendedHedges">
+                            </div>
+                        </td>
+                        <td><p>filler</p></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" name="suspendedHedgesConfidence">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-sm-3"><strong>Unwind at MtM</strong></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" placeholder="%" name="unwind">
+                            </div>
+                        </td>
+                        <td><p>filler</p></td>
+                        <td>
+                            <div class="container">
+                                <input type="number" class="form-control" placeholder="%" name="unwindConfidence">
+                            </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+
+              <div class="container col-sm-6" style="left: 15%; padding-top: 20px;">
+                  <button id="simBtn" type="button" class="btn btn-primary">Run Simulation</button>
+              </div>
+          </div>
+	  </form>
+      </div>
+    </div>
+
+    <script src="/jquery/jquery-1.11.3.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/input.js"></script>
+    <style>
+        body {
+            font-size: 11px;
+            background-color: lightsteelblue;
+        }
+
+        .row {
+            background-color: white;
+        }
+
+        p {
+            color: white !important;
+        }
+
+        input {
+            height: 25px !important;
+        }
+
+        .header {
+            padding-bottom: 10px;
+        }
+
+        #AVR {
+            padding-top: 15px;
+            padding-left: 0px;
+        }
+
+        #AVR label {
+            text-align: left !important;
+        }
+
+        .table {
+            margin-bottom: 5px !important;
+        }
+
+        thead {
+            text-align: center;
+        }
+    </style>
+  </body>
+</html>

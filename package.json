@@ -1,0 +1,26 @@
+{
+  "name": "Elastic-Beanstalk-Sample-App",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "aws-sdk": "latest",
+    "body-parser": "latest",
+    "ejs": "latest",
+    "express": "latest",
+    "file-system": "^2.2.2",
+    "glob": "latest",
+    "json5": "latest",
+    "lodash": "latest",
+    "nconf": "latest",
+    "serve-favicon": "latest",
+    "soap": "latest",
+    "standard-error": "latest",
+    "https": "latest",
+    "fs": "latest",
+    "path": "latest",
+    "node-uuid": "latest"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
