@@ -18,7 +18,9 @@
     "https": "latest",
     "fs": "latest",
     "path": "latest",
-    "node-uuid": "latest"
+    "node-uuid": "latest",
+    "uuid": "latest",
+    "uuid-v4": "latest"
   },
   "scripts": {
     "start": "node app.js"
