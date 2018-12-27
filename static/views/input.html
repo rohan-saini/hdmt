@@ -15,7 +15,61 @@
         <h3 class="text-muted" style="color: black;">Hedging Decision Management Tool</h3>
       </div>
 
-      <div class="container col-sm-12" style="left: 1%; margin-bottom: 15px;">
+	  <div class="container col-sm-12" style="left: 1%; margin-bottom: 15px;">
+		  <div class="row col-sm-12">
+			  <p id="black">Generally, hedge strategiess can be driven by any of four tactical components:</p>
+			  <ul class="list-unstyled">
+				  <li>Programmatic
+				  	<ul>
+						<li>
+							<p id="black">Hedges accumulated in accordance with a calendar schedule</p>
+						</li>
+					</ul>
+				  </li>
+				  <li>Defensive
+					  <ul>
+						  <li>
+							  <p id="black">Hedges accumulated in response to evolving risk metrics</p>
+						  </li>
+					  </ul>
+				  </li>
+				  <li>Discretionary
+					  <ul>
+						  <li>
+							  <p id="black">Hedges accumulated in accordance with a market view as to what constitutes an attractive opportunity</p>
+						  </li>
+					  </ul>
+				  </li>
+			  	  <li>Contingent
+					  <ul>
+						  <li>
+							  <p id="black">Hedges accumulated or shed in response to a concern over potential hedge losses</p>
+						  </li>
+					  </ul>
+				  </li>
+			  </ul>
+		  </div>
+		</div>
+
+		<div class="container col-sm-12" style="left: 1%; margin-bottom: 15px;">
+		  <div class="row col-sm-12">
+			  <p id="black">
+				  This Hedge Strategy Simulation Tool will test any postulated strategy for ecomomic effectiveness based on how it would have performed, given actual NYMEX futures prices (hedge opportunities) and natural gas settlement prices since the early 2000's.
+				  <br><br>
+				  The simplest strategy is a purely Programmatic accumulaion; it will be simulated as a benchmark for comparison with more comprehensive approaches. When looking at results, this methodology will be refered to as a <strong>Targeted-Volume</strong> method.
+			  </p id="black">
+
+			  <p id="black"><strong>Comprehensive Strategies</strong> may incorporate any combination of the four tactical elements above.</p>
+
+		      <p id="black">Any strategy dominated by Defensive and or Contingent tactics will be refered to as a <strong>Risk-Responsive</strong> strategy.</p>
+
+			  <p id="black">Any strategy dominated by Discretionary tactics is an <strong>Opportunistic</strong> strategy, and will not be treated here.</p>
+
+			  <p id="black">The simulation of <strong>risk-responsive hedges</strong> will be performed using "Value at Risk" metrics, or "VaR".</p>
+		  </div>
+	    </div>
+
+	  <div class="container col-sm-12" style="left: 1%; margin-bottom: 15px;">
       <form id="simForm" class="form-horizontal" role="form">
           <div class="row col-sm-12">
               <div class="container col-sm-5" id="AVR">
@@ -333,6 +387,18 @@
         p {
             color: white !important;
         }
+
+		#black {
+			padding-top: 5px;
+			font-size: 14px;
+            color: black !important;
+			font-weight: normal;
+        }
+
+		li {
+			font-size: 14px;
+			font-weight: bold;
+		}
 
         input {
             height: 25px !important;
