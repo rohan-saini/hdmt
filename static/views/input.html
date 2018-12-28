@@ -10,77 +10,72 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="header" align="center">
-        <h3 class="text-muted" style="color: black;">Hedging Decision Management Tool</h3>
-      </div>
+	<div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;">
+	  <div class="container">
+	    <h1 class="display-4">HDMT</h1>
+	    <p class="lead" style="color: #fcfcfc !important">Hedging Decision Management Tool</p>
+	  </div>
+	</div>
 
-	  <div class="container col-sm-12" style="left: 1%; margin-bottom: 15px;">
-		  <div class="row col-sm-12">
-			  <p id="black">Generally, hedge strategiess can be driven by any of four tactical components:</p>
-			  <ul class="list-unstyled">
-				  <li>Programmatic
-				  	<ul>
-						<li>
-							<p id="black">Hedges accumulated in accordance with a calendar schedule</p>
-						</li>
-					</ul>
-				  </li>
-				  <li>Defensive
-					  <ul>
-						  <li>
-							  <p id="black">Hedges accumulated in response to evolving risk metrics</p>
-						  </li>
-					  </ul>
-				  </li>
-				  <li>Discretionary
-					  <ul>
-						  <li>
-							  <p id="black">Hedges accumulated in accordance with a market view as to what constitutes an attractive opportunity</p>
-						  </li>
-					  </ul>
-				  </li>
-			  	  <li>Contingent
-					  <ul>
-						  <li>
-							  <p id="black">Hedges accumulated or shed in response to a concern over potential hedge losses</p>
-						  </li>
-					  </ul>
-				  </li>
-			  </ul>
-		  </div>
-		</div>
+	  <div class="row col-sm-12">
+		  <p id="black">Generally, hedge strategiess can be driven by any of four tactical components:</p>
+		  <ul class="list-unstyled">
+			  <li>Programmatic
+			  	<ul>
+					<li>
+						<p id="black">Hedges accumulated in accordance with a calendar schedule</p>
+					</li>
+				</ul>
+			  </li>
+			  <li>Defensive
+				  <ul>
+					  <li>
+						  <p id="black">Hedges accumulated in response to evolving risk metrics</p>
+					  </li>
+				  </ul>
+			  </li>
+			  <li>Discretionary
+				  <ul>
+					  <li>
+						  <p id="black">Hedges accumulated in accordance with a market view as to what constitutes an attractive opportunity</p>
+					  </li>
+				  </ul>
+			  </li>
+		  	  <li>Contingent
+				  <ul>
+					  <li>
+						  <p id="black">Hedges accumulated or shed in response to a concern over potential hedge losses</p>
+					  </li>
+				  </ul>
+			  </li>
+		  </ul>
+	  </div>
 
-		<div class="container col-sm-12" style="left: 1%; margin-bottom: 15px;">
-		  <div class="row col-sm-12">
-			  <p id="black">
-				  This Hedge Strategy Simulation Tool will test any postulated strategy for ecomomic effectiveness based on how it would have performed, given actual NYMEX futures prices (hedge opportunities) and natural gas settlement prices since the early 2000's.
-				  <br><br>
-				  The simplest strategy is a purely Programmatic accumulaion; it will be simulated as a benchmark for comparison with more comprehensive approaches. When looking at results, this methodology will be refered to as a <strong>Targeted-Volume</strong> method.
-			  </p id="black">
+	  <div class="row col-sm-12" style="background-color: white;">
+		  <p id="black">
+			  This Hedge Strategy Simulation Tool will test any postulated strategy for ecomomic effectiveness based on how it would have performed, given actual NYMEX futures prices (hedge opportunities) and natural gas settlement prices since the early 2000's.
+			  <br><br>
+			  The simplest strategy is a purely Programmatic accumulaion; it will be simulated as a benchmark for comparison with more comprehensive approaches. When looking at results, this methodology will be refered to as a <strong>Targeted-Volume</strong> method.
+		  </p id="black">
 
-			  <p id="black"><strong>Comprehensive Strategies</strong> may incorporate any combination of the four tactical elements above.</p>
+		  <p id="black"><strong>Comprehensive Strategies</strong> may incorporate any combination of the four tactical elements above.</p>
 
-		      <p id="black">Any strategy dominated by Defensive and or Contingent tactics will be refered to as a <strong>Risk-Responsive</strong> strategy.</p>
+	      <p id="black">Any strategy dominated by Defensive and or Contingent tactics will be refered to as a <strong>Risk-Responsive</strong> strategy.</p>
 
-			  <p id="black">Any strategy dominated by Discretionary tactics is an <strong>Opportunistic</strong> strategy, and will not be treated here.</p>
+		  <p id="black">Any strategy dominated by Discretionary tactics is an <strong>Opportunistic</strong> strategy, and will not be treated here.</p>
 
-			  <p id="black">The simulation of <strong>risk-responsive hedges</strong> will be performed using "Value at Risk" metrics, or "VaR".</p>
-		  </div>
-	    </div>
+		  <p id="black">The simulation of <strong>risk-responsive hedges</strong> will be performed using "Value at Risk" metrics, or "VaR".</p>
+	  </div>
 
-	  <div class="container col-sm-12" style="left: 1%; margin-bottom: 15px;">
         <form id="simForm" class="form-horizontal" role="form">
-          <div class="row col-sm-12" style="padding-left: 30px;">
-              <h5>First provide the monthly volume profile for your natural gas protfolio in MMBtu below<h5>
-          </div>
-
           <!-- first table -->
           <div class="row col-sm-12">
+	          <h5>First provide the monthly volume profile for your natural gas protfolio in MMBtu below<h5>
+			  <br>
 			  <div class="container col-sm-3">
 				  <table class="table">
 					  <tr>
-						  <td scope="row" class="col-sm-3"><strong>Jan</strong></td>
+						  <td scope="row" class="col-sm-3">Jan</td>
 						  <td>
                               <div class="container">
                                   <input type="number" class="form-control" name="january">
@@ -88,7 +83,7 @@
                           </td>
 					  </tr>
 					  <tr>
-						  <td scope="row" class="col-sm-3"><strong>Feb</strong></td>
+						  <td scope="row" class="col-sm-3">Feb</td>
 						  <td>
                               <div class="container">
                                   <input type="number" class="form-control" name="february">
@@ -96,7 +91,7 @@
                           </td>
 					  </tr>
 					  <tr>
-						  <td scope="row" class="col-sm-3"><strong>March</strong></td>
+						  <td scope="row" class="col-sm-3">March</td>
 						  <td>
                               <div class="container">
                                   <input type="number" class="form-control" name="march">
@@ -108,7 +103,7 @@
 			  <div class="container col-sm-3">
 				  <table class="table">
 					  <tr>
-						  <td scope="row" class="col-sm-3"><strong>April</strong></td>
+						  <td scope="row" class="col-sm-3">April</td>
 						  <td>
                               <div class="container">
                                   <input type="number" class="form-control" name="january">
@@ -116,7 +111,7 @@
                           </td>
 					  </tr>
 					  <tr>
-						  <td scope="row" class="col-sm-3"><strong>May</strong></td>
+						  <td scope="row" class="col-sm-3">May</td>
 						  <td>
                               <div class="container">
                                   <input type="number" class="form-control" name="february">
@@ -124,7 +119,7 @@
                           </td>
 					  </tr>
 					  <tr>
-						  <td scope="row" class="col-sm-3"><strong>June</strong></td>
+						  <td scope="row" class="col-sm-3">June</td>
 						  <td>
                               <div class="container">
                                   <input type="number" class="form-control" name="march">
@@ -136,7 +131,7 @@
 			  <div class="container col-sm-3">
 				  <table class="table">
 					  <tr>
-						  <td scope="row" class="col-sm-3"><strong>July</strong></td>
+						  <td scope="row" class="col-sm-3">July</td>
 						  <td>
                               <div class="container">
                                   <input type="number" class="form-control" name="january">
@@ -144,7 +139,7 @@
                           </td>
 					  </tr>
 					  <tr>
-						  <td scope="row" class="col-sm-3"><strong>Aug</strong></td>
+						  <td scope="row" class="col-sm-3">Aug</td>
 						  <td>
                               <div class="container">
                                   <input type="number" class="form-control" name="february">
@@ -152,7 +147,7 @@
                           </td>
 					  </tr>
 					  <tr>
-						  <td scope="row" class="col-sm-3"><strong>Sep</strong></td>
+						  <td scope="row" class="col-sm-3">Sep</td>
 						  <td>
                               <div class="container">
                                   <input type="number" class="form-control" name="march">
@@ -164,7 +159,7 @@
 			  <div class="container col-sm-3">
 				  <table class="table">
 					  <tr>
-						  <td scope="row" class="col-sm-3"><strong>Oct</strong></td>
+						  <td scope="row" class="col-sm-3">Oct</td>
 						  <td>
                               <div class="container">
                                   <input type="number" class="form-control" name="january">
@@ -172,7 +167,7 @@
                           </td>
 					  </tr>
 					  <tr>
-						  <td scope="row" class="col-sm-3"><strong>Nov</strong></td>
+						  <td scope="row" class="col-sm-3">Nov</td>
 						  <td>
                               <div class="container">
                                   <input type="number" class="form-control" name="february">
@@ -180,7 +175,7 @@
                           </td>
 					  </tr>
 					  <tr>
-						  <td scope="row" class="col-sm-3"><strong>Dec</strong></td>
+						  <td scope="row" class="col-sm-3">Dec</td>
 						  <td>
                               <div class="container">
                                   <input type="number" class="form-control" name="march">
@@ -192,7 +187,7 @@
           </div>
 
           <!-- third table -->
-          <div class="row col-sm-12" style="padding-top: 10px;">
+          <div class="row col-sm-12" style="padding-top: 10px; background-color: white;">
               <div class="container col-sm-6">
                   <h4>Targeted-Volume Approach</h4>
                   <table class="table">
@@ -279,7 +274,7 @@
               </div>
 
               <div class="container col-sm-6">
-				    <h4 style="color: white !important">Programmatic Element</h4>
+				    <h4 style="color: #f4f7f6 !important">Programmatic Element</h4>
 					<table class="table">
 					  <tr>
 						  <td scope="row" class="col-sm-6"><strong>How many months before delivery would you complete the last Programmatic Hedge?</strong></td>
@@ -301,7 +296,7 @@
 			  </div>
           </div>
 
-		  <div class="row col-sm-12" style="padding-top: 10px;">
+		  <div class="row col-sm-12" style="padding-top: 10px; background-color: white;">
               <div class="container col-sm-6">
                   <h4>Defensive Element</h4>
                   <table class="table">
@@ -426,7 +421,7 @@
 				  </table>
 			  </div>
 
-			  <div class="container col-sm-5" style="padding-top: 5%;">
+			  <div class="container col-sm-5" style="padding-top: 8%;">
 				  <div class="container">
 					  <div class="container col-sm-6">
 						  <strong>In setting the Action Boundaries for each gas year, flex factor in proportion to risk evniroment:</strong>
@@ -438,7 +433,7 @@
 			  </div>
 		  </div>
 
-		  <div class="row col-sm-12" style="padding-top: 10px;">
+		  <div class="row col-sm-12" style="padding-top: 10px; background-color: white;">
               <div class="container col-sm-6">
                   <h4>Contingent Element</h4>
                   <table class="table">
@@ -508,14 +503,12 @@
 			  </div>
           </div>
 
-		  <div class="row col-sm-12" style="padding-top: 10px; padding-bottom: 2%; padding-left: 43%;">
+		  <div id="submitRow" class="row col-sm-12">
 			  <div class="container col-sm-6">
 				  <button id="simBtn" type="button" class="btn btn-primary">Run Simulation</button>
 			  </div>
 		  </div>
 	  </form>
-      </div>
-    </div>
 
     <script src="/jquery/jquery-1.11.3.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
@@ -523,11 +516,25 @@
     <style>
         body {
             font-size: 11px;
-            background-color: lightsteelblue;
         }
 
+		#submitRow {
+			padding-top: 10px;
+			padding-bottom: 2%;
+			padding-left: 46.5%;
+			background-color: white;
+		}
+
+		.jumbotron {
+			background-color: #254E58 !important;
+			color: #fcfcfc;
+			margin-bottom: none !important;
+		}
+
         .row {
-            background-color: white;
+			padding: 1%;
+			padding-left: 6%;
+            background-color: #f4f7f6;
         }
 
         p {
@@ -552,15 +559,6 @@
 
         .header {
             padding-bottom: 10px;
-        }
-
-        #AVR {
-            padding-top: 15px;
-            padding-left: 0px;
-        }
-
-        #AVR label {
-            text-align: left !important;
         }
 
         .table {
