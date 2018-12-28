@@ -194,7 +194,7 @@
           <!-- third table -->
           <div class="row col-sm-12" style="padding-top: 10px;">
               <div class="container col-sm-6">
-                  <h5>Targeted-Volume Approach</h5>
+                  <h4>Targeted-Volume Approach</h4>
                   <table class="table">
 					  <tr>
   						<td scope="row" class="col-sm-6"><strong>What is the ultimate target hedge ratio for the Targeted-Volume benchmark?</strong></td>
@@ -225,7 +225,7 @@
 
               <!-- fourth table -->
 			  <div class="container col-sm-6">
-                  <h5>Postulated Strategy</h5>
+                  <h4>Postulated Strategy</h4>
                   <table class="table">
 					  <tr>
   						<td scope="row" class="col-sm-6"><strong>Maximum Permitted Overall Hedge Ratio</strong></td>
@@ -257,7 +257,7 @@
 
 		  <div class="row col-sm-12" style="padding-top: 10px;">
               <div class="container col-sm-6">
-                  <h5>Programmatic Element</h5>
+                  <h4>Programmatic Element</h4>
                   <table class="table">
 					  <tr>
   						<td scope="row" class="col-sm-6"><strong>Maximum Programmatic Accumulation</strong></td>
@@ -279,7 +279,7 @@
               </div>
 
               <div class="container col-sm-6">
-				    <h5 style="color: white !important">Programmatic Element</h5>
+				    <h4 style="color: white !important">Programmatic Element</h4>
 					<table class="table">
 					  <tr>
 						  <td scope="row" class="col-sm-6"><strong>How many months before delivery would you complete the last Programmatic Hedge?</strong></td>
@@ -303,7 +303,7 @@
 
 		  <div class="row col-sm-12" style="padding-top: 10px;">
               <div class="container col-sm-6">
-                  <h5>Defensive Element</h5>
+                  <h4>Defensive Element</h4>
                   <table class="table">
 					  <tr>
   						<td scope="row" class="col-sm-6"><strong>Holding Period</strong></td>
@@ -325,7 +325,7 @@
               </div>
 
               <div class="container col-sm-6">
-				    <h5 style="color: white !important">Defensive Element</h5>
+				    <h4 style="color: white !important">Defensive Element</h4>
 					<table class="table">
 					  <tr>
 						  <td scope="row" class="col-sm-6"><strong>Remaining Gas Year(Year 0) Always Nearest</strong></td>
@@ -355,8 +355,163 @@
 			  </div>
           </div>
 
-		  <div class="container col-sm-6" style="left: 15%; padding-top: 20px;">
-			  <button id="simBtn" type="button" class="btn btn-primary">Run Simulation</button>
+		  <div class="row col-sm-12">
+			  <div class="container col-sm-7">
+				  <h4>Action Boundaries - Typical Risk Condition</h4>
+				  <table class="table">
+					<thead>
+						<tr>
+							<td></td>
+							<td>Boundary 1</td>
+							<td>Boundary 2</td>
+							<td>Boundary 3</td>
+						</tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td scope="row" class="col-sm-3"><strong>Remaining Gas Year</strong></td>
+						<td>
+							<div class="container">
+								<input type="number" class="form-control" name="mRY1B1">
+							</div>
+						</td>
+						<td>
+							<div class="container">
+								<input type="number" class="form-control" name="mRY1B2">
+							</div>
+						</td>
+						<td>
+							<div class="container">
+								<input type="number" class="form-control" name="mRY1B3">
+							</div>
+						</td>
+					  </tr>
+					  <tr>
+						<td scope="row" class="col-sm-3"><strong>First Full Gas Year</strong></td>
+						<td>
+							<div class="container">
+								<input type="number" class="form-control" name="mRY2B1">
+							</div>
+						</td>
+						<td>
+							<div class="container">
+								<input type="number" class="form-control" name="mRY2B2">
+							</div>
+						</td>
+						<td>
+							<div class="container">
+								<input type="number" class="form-control" name="mRY2B3">
+							</div>
+						</td>
+					  </tr>
+					  <tr>
+						<td scope="row" class="col-sm-3"><strong>Second Full Gas Year</strong></td>
+						<td>
+							<div class="container">
+								<input type="number" class="form-control" name="pVMY1B1">
+							</div>
+						</td>
+						<td>
+							<div class="container">
+								<input type="number" class="form-control" name="pVMY1B2">
+							</div>
+						</td>
+						<td>
+							<div class="container">
+								<input type="number" class="form-control" name="pVMY1B3">
+							</div>
+						</td>
+					  </tr>
+					</tbody>
+				  </table>
+			  </div>
+
+			  <div class="container col-sm-5" style="padding-top: 5%;">
+				  <div class="container">
+					  <div class="container col-sm-6">
+						  <strong>In setting the Action Boundaries for each gas year, flex factor in proportion to risk evniroment:</strong>
+					  </div>
+					  <div class="container col-sm-6">
+					  	  <input type="number" class="form-control" name="pVMY1B3">
+				  	  </div>
+				  </div>
+			  </div>
+		  </div>
+
+		  <div class="row col-sm-12" style="padding-top: 10px;">
+              <div class="container col-sm-6">
+                  <h4>Contingent Element</h4>
+                  <table class="table">
+					<tr>
+  						<td scope="row" class="col-sm-6"><strong>Holding Period</strong></td>
+  						<td>
+  							<div class="container">
+  								<input type="number" class="form-control" name="january">
+  							</div>
+  						</td>
+  					</tr>
+  					<tr>
+  						<td scope="row" class="col-sm-6"><strong>Statistical Confidence</strong></td>
+  						<td>
+  							<div class="container">
+  								<input type="number" class="form-control" name="february">
+  							</div>
+  						</td>
+  					</tr>
+					<tr>
+  						<td scope="row" class="col-sm-6"><strong>Mark to Market Horizon</strong></td>
+  						<td>
+  							<div class="container">
+  								<input type="number" class="form-control" name="february">
+  							</div>
+  						</td>
+  					</tr>
+                  </table>
+              </div>
+
+              <div class="container col-sm-6">
+				    <h4 style="color: white !important">Programmatic Element</h4>
+					<table class="table">
+					  <tr>
+						  <td scope="row" class="col-sm-6"><strong>Suspend Hedges At</strong></td>
+						  <td>
+							  <div class="container">
+								  <input type="number" class="form-control" name="march">
+							  </div>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td scope="row" class="col-sm-6"><strong>Suspend Hedging For</strong></td>
+						  <td>
+							  <div class="container">
+								  <input type="number" class="form-control" name="march">
+							  </div>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td scope="row" class="col-sm-6"><strong>Unwind Hedges At</strong></td>
+						  <td>
+							  <div class="container">
+								  <input type="number" class="form-control" name="march">
+							  </div>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td scope="row" class="col-sm-6"><strong>Unwind Rate</strong></td>
+						  <td>
+							  <div class="container">
+								  <input type="number" class="form-control" name="march">
+							  </div>
+						  </td>
+					  </tr>
+				  	</table>
+			  </div>
+          </div>
+
+		  <div class="row col-sm-12" style="padding-top: 10px; padding-bottom: 2%; padding-left: 43%;">
+			  <div class="container col-sm-6">
+				  <button id="simBtn" type="button" class="btn btn-primary">Run Simulation</button>
+			  </div>
 		  </div>
 	  </form>
       </div>
