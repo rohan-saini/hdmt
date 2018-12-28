@@ -70,303 +70,294 @@
 	    </div>
 
 	  <div class="container col-sm-12" style="left: 1%; margin-bottom: 15px;">
-      <form id="simForm" class="form-horizontal" role="form">
-          <div class="row col-sm-12">
-              <div class="container col-sm-5" id="AVR">
-                  <label class="control-label col-sm-7" for="annualVolumeRequirement">Annual Volume Requirement</label>
-                  <div class="col-sm-5">
-                      <input type="number" class="form-control" id="annualVolumeRequirement" name="annualVolumeRequirement">
-                  </div>
-              </div>
+        <form id="simForm" class="form-horizontal" role="form">
+          <div class="row col-sm-12" style="padding-left: 30px;">
+              <h5>First provide the monthly volume profile for your natural gas protfolio in MMBtu below<h5>
           </div>
 
           <!-- first table -->
           <div class="row col-sm-12">
-              <div class="container col-sm-5">
-                  <h4>Targeted Volume</h4>
-                  <table class="table">
-                      <thead>
-                          <tr>
-                              <td></td>
-                              <td style="color: white">filler</td>
-                              <td></td>
-                          </tr>
-                      </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row" class="col-sm-4"><strong>Max</strong></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" placeholder="%" name="max">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container" style="visibility: hidden;">
-                                <input type="number" class="form-control" placeholder="%" name="hidden">
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" class="col-sm-4"><strong>Starting Month</strong></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="starting">
-                            </div>
-                        </td>
-                        <td><p>filler</p></td>
-                      </tr>
-                      <tr>
-                        <td scope="row" class="col-sm-4"><strong>Over Months</strong></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="over">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="overPerMonth">
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" class="col-sm-4"><strong>Ending Month</strong></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="ending">
-                            </div>
-                        </td>
-                        <td><p>filler</p></td>
-                      </tr>
-                    </tbody>
-                  </table>
-              </div>
-
-
-              <!-- second table -->
-              <div class="container col-sm-7">
-                  <h4>Risk-Responsive Rules</h4>
-                  <table class="table">
-                    <thead>
-                        <tr>
-                            <td></td>
-                            <td>Per month</td>
-                            <td>Max</td>
-                            <td>From months</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row" class="col-sm-4"><strong>Programmatic</strong></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" placeholder="%" name="progPerMonth">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="progMax">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="progFromMonths">
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" class="col-sm-4"><strong>Confidence</strong></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" placeholder="%" name="confidence">
-                            </div>
-                        </td>
-                        <td><p>filler</p></td>
-                        <td><p>filler</p></td>
-                      </tr>
-                      <tr>
-                        <td scope="row" class="col-sm-4"><strong>Holding Period (days)</strong></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="holdingPeriod">
-                            </div>
-                        </td>
-                        <td><p>filler</p></td>
-                        <td><p>filler</p></td>
-                      </tr>
-
-                    </tbody>
-                  </table>
-              </div>
+			  <div class="container col-sm-3">
+				  <table class="table">
+					  <tr>
+						  <td scope="row" class="col-sm-3"><strong>Jan</strong></td>
+						  <td>
+                              <div class="container">
+                                  <input type="number" class="form-control" name="january">
+                              </div>
+                          </td>
+					  </tr>
+					  <tr>
+						  <td scope="row" class="col-sm-3"><strong>Feb</strong></td>
+						  <td>
+                              <div class="container">
+                                  <input type="number" class="form-control" name="february">
+                              </div>
+                          </td>
+					  </tr>
+					  <tr>
+						  <td scope="row" class="col-sm-3"><strong>March</strong></td>
+						  <td>
+                              <div class="container">
+                                  <input type="number" class="form-control" name="march">
+                              </div>
+                          </td>
+					  </tr>
+				  </table>
+			  </div>
+			  <div class="container col-sm-3">
+				  <table class="table">
+					  <tr>
+						  <td scope="row" class="col-sm-3"><strong>April</strong></td>
+						  <td>
+                              <div class="container">
+                                  <input type="number" class="form-control" name="january">
+                              </div>
+                          </td>
+					  </tr>
+					  <tr>
+						  <td scope="row" class="col-sm-3"><strong>May</strong></td>
+						  <td>
+                              <div class="container">
+                                  <input type="number" class="form-control" name="february">
+                              </div>
+                          </td>
+					  </tr>
+					  <tr>
+						  <td scope="row" class="col-sm-3"><strong>June</strong></td>
+						  <td>
+                              <div class="container">
+                                  <input type="number" class="form-control" name="march">
+                              </div>
+                          </td>
+					  </tr>
+				  </table>
+			  </div>
+			  <div class="container col-sm-3">
+				  <table class="table">
+					  <tr>
+						  <td scope="row" class="col-sm-3"><strong>July</strong></td>
+						  <td>
+                              <div class="container">
+                                  <input type="number" class="form-control" name="january">
+                              </div>
+                          </td>
+					  </tr>
+					  <tr>
+						  <td scope="row" class="col-sm-3"><strong>Aug</strong></td>
+						  <td>
+                              <div class="container">
+                                  <input type="number" class="form-control" name="february">
+                              </div>
+                          </td>
+					  </tr>
+					  <tr>
+						  <td scope="row" class="col-sm-3"><strong>Sep</strong></td>
+						  <td>
+                              <div class="container">
+                                  <input type="number" class="form-control" name="march">
+                              </div>
+                          </td>
+					  </tr>
+				  </table>
+			  </div>
+			  <div class="container col-sm-3">
+				  <table class="table">
+					  <tr>
+						  <td scope="row" class="col-sm-3"><strong>Oct</strong></td>
+						  <td>
+                              <div class="container">
+                                  <input type="number" class="form-control" name="january">
+                              </div>
+                          </td>
+					  </tr>
+					  <tr>
+						  <td scope="row" class="col-sm-3"><strong>Nov</strong></td>
+						  <td>
+                              <div class="container">
+                                  <input type="number" class="form-control" name="february">
+                              </div>
+                          </td>
+					  </tr>
+					  <tr>
+						  <td scope="row" class="col-sm-3"><strong>Dec</strong></td>
+						  <td>
+                              <div class="container">
+                                  <input type="number" class="form-control" name="march">
+                              </div>
+                          </td>
+					  </tr>
+				  </table>
+			  </div>
           </div>
 
           <!-- third table -->
-          <div class="row col-sm-12">
+          <div class="row col-sm-12" style="padding-top: 10px;">
               <div class="container col-sm-6">
-                  <h4>Defensive Rules</h4>
+                  <h5>Targeted-Volume Approach</h5>
                   <table class="table">
-                    <thead>
-                        <tr>
-                            <td></td>
-                            <td>Boundary 1</td>
-                            <td>Boundary 2</td>
-                            <td>Boundary 3</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row" class="col-sm-3"><strong>Max Ratio, Yr 1</strong></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" placeholder="%" name="mRY1B1">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" placeholder="%" name="mRY1B2">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" placeholder="%" name="mRY1B3">
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" class="col-sm-3"><strong>Max Ratio, Yr 2</strong></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" placeholder="%" name="mRY2B1">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" placeholder="%" name="mRY2B2">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" placeholder="%" name="mRY2B3">
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" class="col-sm-3"><strong>Portfolio VaR Multiple, Yr 1</strong></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="pVMY1B1">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="pVMY1B2">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="pVMY1B3">
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" class="col-sm-3"><strong>Portfolio VaR Multiple, Yr 2</strong></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="pVMY2B1">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="pVMY2B2">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="pVMY2B3">
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" class="col-sm-3"><strong>Max Monthly Incr.</strong></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" placeholder="%" name="maxMonthlyInc">
-                            </div>
-                        </td>
-                        <td><p>filler</p></td>
-                        <td><p>filler</p></td>
-                      </tr>
-
-                    </tbody>
+					  <tr>
+  						<td scope="row" class="col-sm-6"><strong>What is the ultimate target hedge ratio for the Targeted-Volume benchmark?</strong></td>
+  						<td>
+  							<div class="container">
+  								<input type="number" class="form-control" name="january">
+  							</div>
+  						</td>
+  					</tr>
+  					<tr>
+  						<td scope="row" class="col-sm-6"><strong>How may months before delivery would you start hedge transaction?</strong></td>
+  						<td>
+  							<div class="container">
+  								<input type="number" class="form-control" name="february">
+  							</div>
+  						</td>
+  					</tr>
+  					<tr>
+  						<td scope="row" class="col-sm-6"><strong>How many months before delivery would you complete the last hedge transaction?</strong></td>
+  						<td>
+  							<div class="container">
+  								<input type="number" class="form-control" name="march">
+  							</div>
+  						</td>
+  					</tr>
                   </table>
               </div>
 
               <!-- fourth table -->
-              <div class="container col-sm-6">
-                  <h4>Contingent</h4>
+			  <div class="container col-sm-6">
+                  <h5>Postulated Strategy</h5>
                   <table class="table">
-                    <thead>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td>Holding Period</td>
-                            <td>Confidence</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row" class="col-sm-3"><strong>Monitor</strong></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="monitor">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="monitorHoldingPer">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" placeholder="%" name="monitorConfidence">
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" class="col-sm-3"><strong>Suspended Hedges at MtM</strong></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" placeholder="%" name="suspendedHedges">
-                            </div>
-                        </td>
-                        <td><p>filler</p></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" name="suspendedHedgesConfidence">
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" class="col-sm-3"><strong>Unwind at MtM</strong></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" placeholder="%" name="unwind">
-                            </div>
-                        </td>
-                        <td><p>filler</p></td>
-                        <td>
-                            <div class="container">
-                                <input type="number" class="form-control" placeholder="%" name="unwindConfidence">
-                            </div>
-                        </td>
-                      </tr>
-                    </tbody>
+					  <tr>
+  						<td scope="row" class="col-sm-6"><strong>Maximum Permitted Overall Hedge Ratio</strong></td>
+  						<td>
+  							<div class="container">
+  								<input type="number" class="form-control" name="january">
+  							</div>
+  						</td>
+  					</tr>
+  					<tr>
+  						<td scope="row" class="col-sm-6"><strong>To Calculate volatility, look back how many days?</strong></td>
+  						<td>
+  							<div class="container">
+  								<input type="number" class="form-control" name="february">
+  							</div>
+  						</td>
+  					</tr>
+  					<tr>
+  						<td scope="row" class="col-sm-6"><strong>Gas year start Month</strong></td>
+  						<td>
+  							<div class="container">
+  								<input type="number" class="form-control" name="march">
+  							</div>
+  						</td>
+  					</tr>
+                  </table>
+              </div>
+          </div>
+
+		  <div class="row col-sm-12" style="padding-top: 10px;">
+              <div class="container col-sm-6">
+                  <h5>Programmatic Element</h5>
+                  <table class="table">
+					  <tr>
+  						<td scope="row" class="col-sm-6"><strong>Maximum Programmatic Accumulation</strong></td>
+  						<td>
+  							<div class="container">
+  								<input type="number" class="form-control" name="january">
+  							</div>
+  						</td>
+  					</tr>
+  					<tr>
+  						<td scope="row" class="col-sm-6"><strong>How many months before delivery would you start hedge transctions?</strong></td>
+  						<td>
+  							<div class="container">
+  								<input type="number" class="form-control" name="february">
+  							</div>
+  						</td>
+  					</tr>
                   </table>
               </div>
 
-              <div class="container col-sm-6" style="left: 15%; padding-top: 20px;">
-                  <button id="simBtn" type="button" class="btn btn-primary">Run Simulation</button>
-              </div>
+              <div class="container col-sm-6">
+				    <h5 style="color: white !important">Programmatic Element</h5>
+					<table class="table">
+					  <tr>
+						  <td scope="row" class="col-sm-6"><strong>How many months before delivery would you complete the last Programmatic Hedge?</strong></td>
+						  <td>
+							  <div class="container">
+								  <input type="number" class="form-control" name="march">
+							  </div>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td scope="row" class="col-sm-6"><strong>Implied Monthly Hedge Rate</strong></td>
+						  <td>
+							  <div class="container">
+								  <input type="number" class="form-control" name="march">
+							  </div>
+						  </td>
+					  </tr>
+				  	</table>
+			  </div>
           </div>
+
+		  <div class="row col-sm-12" style="padding-top: 10px;">
+              <div class="container col-sm-6">
+                  <h5>Defensive Element</h5>
+                  <table class="table">
+					  <tr>
+  						<td scope="row" class="col-sm-6"><strong>Holding Period</strong></td>
+  						<td>
+  							<div class="container">
+  								<input type="number" class="form-control" name="january">
+  							</div>
+  						</td>
+  					</tr>
+  					<tr>
+  						<td scope="row" class="col-sm-6"><strong>Statistical Confidence</strong></td>
+  						<td>
+  							<div class="container">
+  								<input type="number" class="form-control" name="february">
+  							</div>
+  						</td>
+  					</tr>
+                  </table>
+              </div>
+
+              <div class="container col-sm-6">
+				    <h5 style="color: white !important">Defensive Element</h5>
+					<table class="table">
+					  <tr>
+						  <td scope="row" class="col-sm-6"><strong>Remaining Gas Year(Year 0) Always Nearest</strong></td>
+						  <td>
+							  <div class="container">
+								  <input type="checkbox" class="form-control" name="march">
+							  </div>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td scope="row" class="col-sm-6"><strong>First Full Gas Year(Year 1)</strong></td>
+						  <td>
+							  <div class="container">
+								  <input type="checkbox" class="form-control" name="march">
+							  </div>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td scope="row" class="col-sm-6"><strong>Second Full Gas Year(Year 2) Always Farthest</strong></td>
+						  <td>
+							  <div class="container">
+								  <input type="checkbox" class="form-control" name="march">
+							  </div>
+						  </td>
+					  </tr>
+				  	</table>
+			  </div>
+          </div>
+
+		  <div class="container col-sm-6" style="left: 15%; padding-top: 20px;">
+			  <button id="simBtn" type="button" class="btn btn-primary">Run Simulation</button>
+		  </div>
 	  </form>
       </div>
     </div>
