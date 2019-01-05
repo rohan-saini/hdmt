@@ -14,7 +14,7 @@ $(document).ready(function() {
       var datatosend = {
           "textToSave": textToSave
       }
-        //post request to call method that will validate login info
+        //post request to call method that will run simulation
         $.post( "/runSimulation", datatosend,
                 function(resp) {
                     if(resp.message != "success") {
