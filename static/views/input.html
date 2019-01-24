@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="/bootstrap/css/theme/default/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>HDMT</title>
   </head>
 
@@ -18,7 +19,7 @@
 	</div>
 
 	  <div class="row">
-		  <p id="black">Generally, hedge strategiess can be driven by any of four tactical components:</p>
+		  <p id="black">Generally, hedge strategies can be driven by any of four tactical components:</p>
 		  <ul class="list-unstyled">
 			  <li>Programmatic
 			  	<ul>
@@ -64,7 +65,7 @@
 
 		  <p id="black">Any strategy dominated by Discretionary tactics is an <strong>Opportunistic</strong> strategy, and will not be treated here.</p>
 
-		  <p id="black">The simulation of <strong>risk-responsive hedges</strong> will be performed using "Value at Risk" metrics, or "VaR".</p>
+		  <p id="black">The simulation of <strong>risk-responsive hedges</strong> will be performed using <strong>"Value at Risk" metrics, or "VaR"</strong>.</p>
 	  </div>
 
         <form id="simForm" class="form-horizontal" role="form">
@@ -78,7 +79,7 @@
 						  <td scope="row" class="col-sm-4">Jan</td>
 						  <td>
                               <div class="container">
-                                  <input type="number" class="form-control" name="january">
+                                  <input type="number" class="form-control" name="january" required>
                               </div>
                           </td>
 					  </tr>
@@ -86,7 +87,7 @@
 						  <td scope="row" class="col-sm-4">Feb</td>
 						  <td>
                               <div class="container">
-                                  <input type="number" class="form-control" name="february">
+                                  <input type="number" class="form-control" name="february" required>
                               </div>
                           </td>
 					  </tr>
@@ -94,7 +95,7 @@
 						  <td scope="row" class="col-sm-4">March</td>
 						  <td>
                               <div class="container">
-                                  <input type="number" class="form-control" name="march">
+                                  <input type="number" class="form-control" name="march" required>
                               </div>
                           </td>
 					  </tr>
@@ -106,7 +107,7 @@
 						  <td scope="row" class="col-sm-4">April</td>
 						  <td>
                               <div class="container">
-                                  <input type="number" class="form-control" name="april">
+                                  <input type="number" class="form-control" name="april" required>
                               </div>
                           </td>
 					  </tr>
@@ -114,7 +115,7 @@
 						  <td scope="row" class="col-sm-4">May</td>
 						  <td>
                               <div class="container">
-                                  <input type="number" class="form-control" name="may">
+                                  <input type="number" class="form-control" name="may" required>
                               </div>
                           </td>
 					  </tr>
@@ -122,7 +123,7 @@
 						  <td scope="row" class="col-sm-4">June</td>
 						  <td>
                               <div class="container">
-                                  <input type="number" class="form-control" name="june">
+                                  <input type="number" class="form-control" name="june" required>
                               </div>
                           </td>
 					  </tr>
@@ -134,7 +135,7 @@
 						  <td scope="row" class="col-sm-4">July</td>
 						  <td>
                               <div class="container">
-                                  <input type="number" class="form-control" name="july">
+                                  <input type="number" class="form-control" name="july" required>
                               </div>
                           </td>
 					  </tr>
@@ -142,7 +143,7 @@
 						  <td scope="row" class="col-sm-4">Aug</td>
 						  <td>
                               <div class="container">
-                                  <input type="number" class="form-control" name="aug">
+                                  <input type="number" class="form-control" name="aug" required>
                               </div>
                           </td>
 					  </tr>
@@ -150,7 +151,7 @@
 						  <td scope="row" class="col-sm-4">Sep</td>
 						  <td>
                               <div class="container">
-                                  <input type="number" class="form-control" name="september">
+                                  <input type="number" class="form-control" name="september" required>
                               </div>
                           </td>
 					  </tr>
@@ -162,7 +163,7 @@
 						  <td scope="row" class="col-sm-4">Oct</td>
 						  <td>
                               <div class="container">
-                                  <input type="number" class="form-control" name="october">
+                                  <input type="number" class="form-control" name="october" required>
                               </div>
                           </td>
 					  </tr>
@@ -170,7 +171,7 @@
 						  <td scope="row" class="col-sm-4">Nov</td>
 						  <td>
                               <div class="container">
-                                  <input type="number" class="form-control" name="november">
+                                  <input type="number" class="form-control" name="november" required>
                               </div>
                           </td>
 					  </tr>
@@ -178,7 +179,7 @@
 						  <td scope="row" class="col-sm-4">Dec</td>
 						  <td>
                               <div class="container">
-                                  <input type="number" class="form-control" name="december">
+                                  <input type="number" class="form-control" name="december" required>
                               </div>
                           </td>
 					  </tr>
@@ -196,23 +197,27 @@
 	  						<td scope="row" class="col-sm-10">What is the ultimate target hedge ratio for the Targeted-Volume benchmark?</td>
 	  						<td>
 	  							<div class="container">
-	  								<input type="number" class="form-control" name="ultTargRatio">
+	  								<input type="number" class="form-control" placeholder="%" name="ultTargRatio" required>
 	  							</div>
 	  						</td>
 	  					</tr>
 	  					<tr>
-	  						<td scope="row" class="col-sm-10">How may months before delivery would you start hedge transaction?</td>
+	  						<td scope="row" class="col-sm-10">How may months before delivery would you start hedge transaction?
+								<h7>e.g. 24</h7>
+							</td>
 	  						<td>
 	  							<div class="container">
-	  								<input type="number" class="form-control" name="startMonths">
-	  							</div>
+	  								<input type="number" class="form-control" placeholder="months" name="startMonths" required>
+								</div>
 	  						</td>
 	  					</tr>
 	  					<tr>
-	  						<td scope="row" class="col-sm-10">How many months before delivery would you complete the last hedge transaction?</td>
+	  						<td scope="row" class="col-sm-10">How many months before delivery would you complete the last hedge transaction?
+								<h7>e.g. 13</h7>
+							</td>
 	  						<td>
 	  							<div class="container">
-	  								<input type="number" class="form-control" name="lastMonths">
+	  								<input type="number" class="form-control" placeholder="months" name="lastMonths" required>
 	  							</div>
 	  						</td>
 	  					</tr>
@@ -228,34 +233,62 @@
 				  <div class="container col-sm-6">
 	                  <table class="table">
 						  <tr>
-	  						<td scope="row" class="col-sm-9">Maximum Permitted Overall Hedge Ratio</td>
+	  						<td scope="row" class="col-sm-9">Maximum Permitted Overall Hedge Ratio
+								<h7>e.g. 75%</h7>
+							</td>
 	  						<td>
 	  							<div class="container">
-	  								<input type="number" class="form-control" name="maxRatio">
+	  								<input type="number" class="form-control" placeholder="%" name="maxRatio" required>
 	  							</div>
 	  						</td>
 	  					</tr>
 	  					<tr>
-	  						<td scope="row" class="col-sm-9">To Calculate volatility, look back how many days?</td>
+	  						<td scope="row" class="col-sm-9" style="padding-bottom: 0px;">
+								To Calculate volatility, look back how many days?
+								<a id="volatilityHelp" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Daily volatility is calculated to inform risk assessments based on a default 40-days prior price activiy. That default may be changed here"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+							</td>
 	  						<td>
 	  							<div class="container">
-	  								<input type="number" class="form-control" name="lookBackDays">
+	  								<input type="number" class="form-control" placeholder="days" name="lookBackDays" required>
 	  							</div>
 	  						</td>
 	  					</tr>
 	                  </table>
 	              </div>
+
 				  <div class="container col-sm-6">
-					  <table class="table">
-	  					<tr>
-	  						<td scope="row" class="col-sm-9">Gas year start Month</td>
-	  						<td>
-	  							<div class="container">
-	  								<input type="number" class="form-control" name="gasYearStart">
-	  							</div>
-	  						</td>
-	  					</tr>
-	                  </table>
+						<table class="table">
+						  <tr>
+							  <td scope="row" class="col-sm-9">Gas year start month</td>
+  	  						  <td>
+  	  							<div class="container">
+  									<select>
+  									  <option value="none">Select Month</option>
+  									  <option value="jan">January</option>
+  									  <option value="feb">February</option>
+  									  <option value="march">March</option>
+  									  <option value="april">April</option>
+  									  <option value="may">May</option>
+  									  <option value="june">June</option>
+  									  <option value="july">July</option>
+  									  <option value="august">August</option>
+  									  <option value="september">September</option>
+  									  <option value="october">October</option>
+  									  <option value="november">November</option>
+  									  <option value="december">December</option>
+  									</select>
+  	  							</div>
+  	  						  </td>
+						  </tr>
+						  <tr>
+							  <td scope="row" class="col-sm-9">Implied Monthly Hedge Rate</td>
+							  <td>
+								  <div class="container">
+									  <input type="number" class="form-control" id="hedgeRateFirst" style="background-color: #ffffe0;" required>
+								  </div>
+							  </td>
+						  </tr>
+					  	</table>
 				  </div>
 		  	  </div>
 
@@ -269,15 +302,17 @@
 	  						<td scope="row" class="col-sm-9">Maximum Programmatic Accumulation</td>
 	  						<td>
 	  							<div class="container">
-	  								<input type="number" class="form-control" name="maxAccumulation">
+	  								<input type="number" class="pre-calculated form-control" placeholder="%" id="maxAccumulation" required>
 	  							</div>
 	  						</td>
 	  					</tr>
 	  					<tr>
-	  						<td scope="row" class="col-sm-9">How many months before delivery would you start hedge transctions?</td>
+	  						<td scope="row" class="col-sm-9">How many months before delivery would you start hedge transctions?
+								<h7>e.g. 36</h7>
+							</td>
 	  						<td>
 	  							<div class="container">
-	  								<input type="number" class="form-control" name="progStartMonths">
+	  								<input type="number" class="pre-calculated form-control" placeholder="months" id="progStartMonths" required>
 	  							</div>
 	  						</td>
 	  					</tr>
@@ -288,10 +323,12 @@
 					    <!-- <h5 id="subHeader" style="color: #f4f7f6">Programmatic Element</h5> -->
 						<table class="table">
 						  <tr>
-							  <td scope="row" class="col-sm-9">How many months before delivery would you complete the last Programmatic Hedge?</td>
+							  <td scope="row" class="col-sm-9">How many months before delivery would you complete the last Programmatic Hedge?
+								  <h7>e.g. 14</h7>
+							  </td>
 							  <td>
 								  <div class="container">
-									  <input type="number" class="form-control" name="progLastMonths">
+									  <input type="number" class="pre-calculated form-control" placeholder="months" id="progLastMonths" required>
 								  </div>
 							  </td>
 						  </tr>
@@ -299,7 +336,7 @@
 							  <td scope="row" class="col-sm-9">Implied Monthly Hedge Rate</td>
 							  <td>
 								  <div class="container">
-									  <input type="number" class="form-control" name="hedgeRate">
+									  <input type="number" class="form-control" id="hedgeRate" style="background-color: #ffffe0;" required>
 								  </div>
 							  </td>
 						  </tr>
@@ -311,61 +348,37 @@
 
 			  <div class="row">
 				  <div class="container col-sm-6">
-	                  <h5>Value at Risk Parameters</h5>
+	                  <h5><u>Value at Risk Parameters</u></h5>
+					  <a id="VaRPHelp" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Defined: Potential price migration for all unhedged futures over a finite holding period at a specified statistical confidence. Volatility for each monthly futures contract is estimated daily, the potential movement of available hedge prices constitutes risk"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 	                  <table class="table">
 						  <tr>
-	  						<td scope="row" class="col-sm-9">Holding Period</td>
+	  						<td scope="row" class="col-sm-9">Holding Period
+								<h7>e.g. days</h7>
+							</td>
 	  						<td>
 	  							<div class="container">
-	  								<input type="number" class="form-control" name="holdingPer">
+	  								<input type="number" class="form-control" placeholder="days" name="holdingPer" required>
 	  							</div>
 	  						</td>
 	  					</tr>
 	  					<tr>
-	  						<td scope="row" class="col-sm-9">Statistical Confidence</td>
+	  						<td scope="row" class="col-sm-9">Statistical Confidence
+								<h7>e.g. 98%</h7>
+							</td>
 	  						<td>
 	  							<div class="container">
-	  								<input type="number" class="form-control" name="statConf">
+	  								<input type="number" class="form-control" placeholder="%" name="statConf" required>
 	  							</div>
 	  						</td>
 	  					</tr>
 	                  </table>
 	              </div>
-
-	              <div class="container col-sm-6">
-					    <h5>Hedge Management Horizon</h5>
-						<table class="table">
-						  <tr>
-							  <td scope="row" class="col-sm-9">Remaining Gas Year(Year 0) Always Nearest</td>
-							  <td>
-								  <div class="container">
-									  <input type="checkbox" class="form-control" name="remainingGas">
-								  </div>
-							  </td>
-						  </tr>
-						  <tr>
-							  <td scope="row" class="col-sm-9">First Full Gas Year(Year 1)</td>
-							  <td>
-								  <div class="container">
-									  <input type="checkbox" class="form-control" name="firstFullGas">
-								  </div>
-							  </td>
-						  </tr>
-						  <tr>
-							  <td scope="row" class="col-sm-9">Second Full Gas Year(Year 2) Always Farthest</td>
-							  <td>
-								  <div class="container">
-									  <input type="checkbox" class="form-control" name="secondFullGas">
-								  </div>
-							  </td>
-						  </tr>
-					  	</table>
-				  </div>
 			  </div>
 
 			  <div class="row">
 				  <div class="container col-sm-7">
-					  <h5>Tiered Action Boundaries</h5>
+					  <h5><u>Tiered Action Boundaries</u></h5>
+					  <a id="VaRPHelp" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Each Action Boundary will consist of an interim tolerance (potential future price level to be defended) and a maximum hedge ratio for defending that price level.  Hedges will be trigerred when the forward portfolio cost plus associated VaR (risk) reaches or exceeds the interim tolerance.  The amount of hedges triggered will equal  the volume necessary to constrain VaR so that the interim tolerance is protected, but hedge increments will be constrained to observe the maximum hedge ratio for that tier.  Once the maximum hedge ratio for Tier 1 is reached, metrics will shift to defending Tier 2 up to its maximum hedge ratio, etc."><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 					  <table class="table">
 						<thead>
 							<tr>
@@ -379,54 +392,54 @@
 						  <tr>
 							<td scope="row" class="col-sm-3">Remaining Gas Year</td>
 							<td>
-								<div class="container">
-									<input type="number" class="form-control" name="rB1">
+								<div class="container col-sm-10">
+									<input type="number" class="form-control" placeholder="%" name="rB1" required>
 								</div>
 							</td>
 							<td>
-								<div class="container">
-									<input type="number" class="form-control" name="rB2">
+								<div class="container col-sm-10">
+									<input type="number" class="form-control" placeholder="%" name="rB2" required>
 								</div>
 							</td>
 							<td>
-								<div class="container">
-									<input type="number" class="form-control" name="rB3">
+								<div class="container col-sm-10">
+									<input type="number" class="form-control" placeholder="%" name="rB3" required>
 								</div>
 							</td>
 						  </tr>
 						  <tr>
 							<td scope="row" class="col-sm-3">First Full Gas Year</td>
 							<td>
-								<div class="container">
-									<input type="number" class="form-control" name="fB1">
+								<div class="container col-sm-10">
+									<input type="number" class="form-control" placeholder="%" name="fB1" required>
 								</div>
 							</td>
 							<td>
-								<div class="container">
-									<input type="number" class="form-control" name="fB2">
+								<div class="container col-sm-10">
+									<input type="number" class="form-control" placeholder="%" name="fB2" required>
 								</div>
 							</td>
 							<td>
-								<div class="container">
-									<input type="number" class="form-control" name="fB3">
+								<div class="container col-sm-10">
+									<input type="number" class="form-control" placeholder="%" name="fB3" required>
 								</div>
 							</td>
 						  </tr>
 						  <tr>
 							<td scope="row" class="col-sm-3">Second Full Gas Year</td>
 							<td>
-								<div class="container">
-									<input type="number" class="form-control" name="sB1">
+								<div class="container col-sm-10">
+									<input type="number" class="form-control" placeholder="%" name="sB1" required>
 								</div>
 							</td>
 							<td>
-								<div class="container">
-									<input type="number" class="form-control" name="sB2">
+								<div class="container col-sm-10">
+									<input type="number" class="form-control" placeholder="%" name="sB2" required>
 								</div>
 							</td>
 							<td>
-								<div class="container">
-									<input type="number" class="form-control" name="sB3">
+								<div class="container col-sm-10">
+									<input type="number" class="form-control" placeholder="%" name="sB3" required>
 								</div>
 							</td>
 						  </tr>
@@ -436,11 +449,12 @@
 
 				  <div class="container col-sm-5" style="padding-top: 8%;">
 					  <div class="container">
-						  <div class="container col-sm-8" style="font-size: 13.5px;">
-							  In setting the Action Boundaries for each gas year, flex factor in proportion to risk evniroment
+						  <div class="container col-sm-8" style="font-size: 13.5px; padding-right: 0px;">
+							  In setting the Action Boundaries for each gas year, flex factor in proportion to risk environment
 						  </div>
+						  <a id="VaRPHelp" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="At the start of each gas year, the simulation can flex these interim tolerances in response to prevailing conditions.  In other words, if an Action Boundary's interim tolerance is 10% when risk is average, it could be set higher in risky years.  Why?  Because a 10% tolerance could result in precipitous hedging in very high-risk environments."><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 						  <div class="container col-sm-4">
-						  	  <input type="number" class="form-control" name="flexFactor">
+						  	  <input type="number" class="form-control" placeholder="%" name="flexFactor" required>
 					  	  </div>
 					  </div>
 				  </div>
@@ -450,29 +464,35 @@
 
 			  <div class="row">
 	              <div class="container col-sm-6">
-	                  <h5>Value at Risk Parameters</h5>
+	                  <h5><u>Value at Risk Parameters</u></h5>
 	                  <table class="table">
 						<tr>
-	  						<td scope="row" class="col-sm-9">Holding Period</td>
+	  						<td scope="row" class="col-sm-9">Holding Period <a id="VaRPHelp" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="A strategy that chooses to be more risk averse with respect to hedge losses can set a longer holding period and/or higher confidence level."><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+								<h7>e.g. 40 days</h7>
+							</td>
 	  						<td>
 	  							<div class="container">
-	  								<input type="number" class="form-control" name="contHoldingPer">
+	  								<input type="number" class="form-control" placeholder="days" name="contHoldingPer" required>
 	  							</div>
 	  						</td>
 	  					</tr>
 	  					<tr>
-	  						<td scope="row" class="col-sm-9">Statistical Confidence</td>
+	  						<td scope="row" class="col-sm-9">Statistical Confidence
+								<h7>e.g. 99%</h7>
+							</td>
 	  						<td>
 	  							<div class="container">
-	  								<input type="number" class="form-control" name="contStatConf">
+	  								<input type="number" class="form-control" placeholder="%" name="contStatConf" required>
 	  							</div>
 	  						</td>
 	  					</tr>
 						<tr>
-	  						<td scope="row" class="col-sm-9">Mark to Market Horizon</td>
+	  						<td scope="row" class="col-sm-9">Mark to Market Horizon
+								<h7>e.g. 99%</h7>
+							</td>
 	  						<td>
 	  							<div class="container">
-	  								<input type="number" class="form-control" name="markToMarket">
+	  								<input type="number" class="form-control" placeholder="months" name="markToMarket" required>
 	  							</div>
 	  						</td>
 	  					</tr>
@@ -480,37 +500,41 @@
 	              </div>
 
 	              <div class="container col-sm-6">
-					    <h5>Contingent Responses</h5>
+					    <h5><u>Contingent Responses</u></h5>
 						<table class="table">
 						  <tr>
-							  <td scope="row" class="col-sm-9">Suspend Hedges At</td>
+							  <td scope="row" class="col-sm-9">Suspend Hedges At
+								  <h7>e.g. 6 weeks</h7>
+							  </td>
 							  <td>
 								  <div class="container">
-									  <input type="number" class="form-control" name="suspendAt">
+									  <input type="number" class="form-control" placeholder="% MtM" name="suspendAt" required>
 								  </div>
 							  </td>
 						  </tr>
 						  <tr>
-							  <td scope="row" class="col-sm-9">Suspend Hedging For</td>
+							  <td scope="row" class="col-sm-9">Suspend Hedging For <a id="VaRPHelp" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="In the event hedge loss potential exceeds the mark to market tolerance, hedging will be suspended for this many weeks."><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>
 							  <td>
 								  <div class="container">
-									  <input type="number" class="form-control" name="suspendFor">
+									  <input type="number" class="form-control" placeholder="weeks" name="suspendFor" required>
 								  </div>
 							  </td>
 						  </tr>
 						  <tr>
-							  <td scope="row" class="col-sm-9">Unwind Hedges At</td>
+							  <td scope="row" class="col-sm-9">Unwind Hedges At
+								  <h7>e.g. 15% MtM</h7>
+							  </td>
 							  <td>
 								  <div class="container">
-									  <input type="number" class="form-control" name="unwindAt">
+									  <input type="number" class="form-control" placeholder="% MtM" name="unwindAt" required>
 								  </div>
 							  </td>
 						  </tr>
 						  <tr>
-							  <td scope="row" class="col-sm-9">Unwind Rate</td>
+							  <td scope="row" class="col-sm-9">Unwind Rate <a id="VaRPHelp" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="In some cases suspension of hedges might not suffice to constrain hedge loss potential. This second level response will unwind hedges in extreme cases."><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>
 							  <td>
 								  <div class="container">
-									  <input type="number" class="form-control" name="unwindRate">
+									  <input type="number" class="form-control" placeholder="%/week" name="unwindRate" required>
 								  </div>
 							  </td>
 						  </tr>
@@ -523,6 +547,7 @@
 		  <div id="submitRow" class="row">
 			  <div class="container col-sm-6">
 				  <button id="simBtn" type="button" class="btn btn-primary">Run Simulation</button>
+				  <button id="outputBtn" type="button" class="btn btn-primary">Get Output</button>
 			  </div>
 		  </div>
 	  </form>
@@ -538,11 +563,16 @@
 		#submitRow {
 			padding-top: 2%;
 			padding-bottom: 2%;
-			padding-left: 46.5%;
+			padding-left: 40.5%;
 			background-color: white;
 		}
 
+		#simBtn {
+			margin-right: 5%;
+		}
+
 		#subHeader {
+			color: steelblue;
 			margin-left: 3%;
 			font-size: 16px;
 		}
@@ -567,6 +597,11 @@
         p {
             color: white !important;
         }
+
+		h7 {
+			padding-left: 7px;
+			color: gray;
+		}
 
 		#black {
 			padding-top: 5px;
@@ -595,6 +630,10 @@
         thead {
             text-align: center;
         }
+
+		input {
+			font-size: 10px !important;
+		}
     </style>
   </body>
 </html>
